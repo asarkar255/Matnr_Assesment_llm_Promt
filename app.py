@@ -114,7 +114,6 @@ def llm_assess_and_prompt(unit: Unit) -> Dict[str, str]:
     try:
         resp = client.chat.completions.create(
             model=OPENAI_MODEL,
-            temperature=0.0,
             messages=[
                 {"role": "system", "content": "You are a precise ABAP remediation planner that outputs strict JSON only."},
                 {"role": "user", "content": msg}
