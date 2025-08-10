@@ -3,3 +3,6 @@ pydantic
 typing 
 openai
 uvicorn
+langchain
+langchain_openai
+langchain_core
