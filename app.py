@@ -13,7 +13,7 @@ OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-5")
 # LangChain + OpenAI
 from langchain_openai import ChatOpenAI
 from langchain.prompts import ChatPromptTemplate
-from langchain.output_parsers import JsonOutputParser
+from langchain_core.output_parsers import JsonOutputParser
 
 app = FastAPI(title="MATNR Assessment & LLM Prompt (LangChain, no fallback, minimal input)")
 
