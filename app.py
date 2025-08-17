@@ -78,6 +78,7 @@ Goal:
 1) Turn 'matnr_findings' into a concise human-readable assessment paragraph for a reporting file (no code changes now).
    Summarize risks and why they matter for S/4HANA 40-char MATNR (SAP Note 2215424).
 2) Produce a remediation LLM prompt to be used later. The prompt must:
+   - To the point, and contain **no more than 5 numbered bullet points**.
    - Reference the unit metadata (program/include/unit/lines if provided).
    - Ask for minimal, behavior-preserving ECC-safe changes (no 7.4+ syntax) focused strictly on MATNR length/compatibility.
    - Require output JSON with keys: original_code, remediated_code, changes[] (line, before, after, reason).
